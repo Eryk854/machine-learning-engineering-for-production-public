@@ -36,6 +36,10 @@ jobs:
         with:
           python-version: '3.7'
           architecture: "x64"
+      -
+        name: Check python version
+        run: |
+          echo $(python --version)
       - 
         name: Install dependencies
         run: |
